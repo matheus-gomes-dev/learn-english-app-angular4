@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import {Frase} from '../shared/frase.model'
-import {FRASES} from './frases-mock'
-
+import { Frase } from '../shared/frase.model'
+import { FRASES } from './frases-mock'
 
 @Component({
   selector: 'app-painel',
@@ -32,7 +31,21 @@ export class PainelComponent implements OnInit {
   }
 
   public verificarResposta(): void {
-    console.log('Verificar resposta: ', this.resposta)
+    
+    if(this.rodadaFrase.frasePtBr == this.resposta) {
+      alert('A tradução está correta')
+
+      //trocar pergunta da rodada
+      this.rodada++
+
+      //atualiza o objeto rodadaFrase 
+      this.rodadaFrase = this.frases[this.rodada]
+
+    } else {
+      alert('A tradução está errada')
+    }
+
+    
   }
 
 }
