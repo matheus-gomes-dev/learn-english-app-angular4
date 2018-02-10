@@ -13,7 +13,7 @@ export class ProgressoComponent implements OnInit {
   //no arquivo html do painel, devo incluir <app-progresso [progresso]="progresso"></app-progresso>
   @Input() public progresso: number = 0
 
-  //caso eu queria utilizar um outra variável, exemplo <app-progresso [variavel_x]="progresso"></app-progresso>
+  //caso eu queira utilizar uma outra variável, exemplo <app-progresso [variavel_x]="progresso"></app-progresso>
   //@Input ficaria da seguinte forma:
   //@Input('variavel_x') public progresso: number = 0
 
