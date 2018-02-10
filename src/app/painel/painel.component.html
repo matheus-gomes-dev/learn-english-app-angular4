@@ -19,8 +19,10 @@
                     <textarea 
                         class="form-control" 
                         rows="3"
-                        (input)="atualizaResposta($event)"
+                        (input) = "atualizaResposta($event)"
+                        [value] = "resposta"
                     ></textarea>
+                    <!-- com [value]="resposta" relaciono valor do input com variável 'resposta' definida na classe-->
                 </div>
             </div>
         </div>
