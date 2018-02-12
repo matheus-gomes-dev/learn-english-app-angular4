@@ -9,7 +9,7 @@ export class ProgressoComponent implements OnInit {
 
   //progresso é classe filha de painel
   //posso usar @Input do angular para trocar informação
-  //entre classes pai/filha	
+  //de classes pai para classes filhas
   //no arquivo html do painel, devo incluir <app-progresso [progresso]="progresso"></app-progresso>
   @Input() public progresso: number = 0
 
