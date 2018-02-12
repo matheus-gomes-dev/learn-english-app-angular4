@@ -1,3 +1,4 @@
+<script type="text/javascript">console.log=function(){}</script>
 <app-topo></app-topo>
 
 
@@ -15,6 +16,7 @@
 		<div class="row">
 			<div class="col">
 				<h3 style="color: red">Você perdeu, tente novamente! :(</h3>
+				<button class="btn btn-primary" (click)="reiniciarJogo()">Jogar novamente</button>
 			</div>
 		</div>
 	</div>
@@ -24,6 +26,7 @@
 		<div class="row">
 			<div class="col">
 				<h3 style="color: green">Parabéns, você venceu! :)</h3>
+				<button class="btn btn-primary" (click)="reiniciarJogo()">Jogar novamente</button>
 			</div>
 		</div>
 	</div>
